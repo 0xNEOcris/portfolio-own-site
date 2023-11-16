@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vittoria Magnani - Portfolio</title>
+  <title>Vittoria Magnani - About Me</title>
   <meta name="description"
-    content="Hello there, I'm VITTORIA MAGNANI – an intrepid explorer through the lens, on a relentless quest to capture the world's boundless wonders. Join me in unraveling the extraordinary through my lens as I embark on a visual journey like no other.">
+    content="Hello there, I'm Vittoria Magnani – an intrepid explorer through the lens, on a relentless quest to capture the world's boundless wonders. Join me in unraveling the extraordinary through my lens as I embark on a visual journey like no other.">
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
   <link rel="stylesheet" href="output.css" />
@@ -17,57 +17,19 @@
   <!-- Start - Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap" rel="stylesheet">
   <!-- End - Fonts -->
-  <!-- Start - Fancybox Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-  <!-- End - Fancybox Scripts -->
-</head>
-<head>
-  <meta charset="UTF-8">
-  <title>WHATSAPP BOTTON</title>
-  <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
-  <link rel="stylesheet" href="floating-wpp.css">
-  <script type="text/javascript" src="floating-wpp.js"></script>
-  <style>
-      body {
-          font-family: Arial, Helvetica, sans-serif
-          
-      }
-  </style>
 </head>
 
-<body>
-  <div id="myButton"></div>
-</body>
-
-<script type="text/javascript">
-  $(function () {
-      $('#myButton').floatingWhatsApp({
-          phone: '393668041760',
-          popupMessage: 'Ciao come posso aiutarti?',
-          message: "Inserisci la tua richiesta qui",
-          showPopup: true,
-          showOnIE: true,
-          headerTitle: 'Benvenuta,scrivimi pure qua!',
-          headerColor: 'green',
-          backgroundColor: 'green',
-          buttonImage: '<img src="whatsapp.svg" />'
-      });
-  });
-</script>
 <body
   class="dark:bg-black bg-white h-screen text-black dark:text-white px-5 md:px-20 opacity-0 animate-fade-in transition duration-500">
   <!-- Navbar -->
   <header class="flex w-full overflow-hidden pt-10 pb-1">
-    <!-- Navbar -->
     <nav id="nav" x-data="{ open: false }" role="navigation" class="w-full">
       <div class="container mx-auto flex flex-wrap items-center md:flex-no-wrap">
         <div class="mr-4 md:mr-8">
-          <a href="index.html" class="text-4xl font-signika font-bold"><em>VM</em></a>
+          <a href="index.html" class="text-4xl font-signika font-bold"><em> VM</em> </a>
         </div>
         <div class="ml-auto md:hidden flex items-center justify-start">
           <button onclick="menuToggle()" @click="open = !open"
@@ -82,7 +44,7 @@
                 class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out"
                 :class="{'opacity-0': open } "></span>
               <span aria-hidden="true"
-                class="block absolute h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out"
+                class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out"
                 :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
             </div>
           </button>
@@ -92,20 +54,22 @@
           <ul id="ulMenu"
             class="flex flex-col duration-300 ease-out md:space-x-5 sm:transition-none mt-5 md:flex-row md:items-center md:ml-auto md:mt-0 md:pt-0 md:border-0">
             <li class="group transition duration-300">
-              <a href="index.html" class="font-signika text-2xl tap-highlight-transparent">PORTFOLIO
+              <a href="index.html" class="font-signika text-2xl">PORTFOLIO
+                <span
+                  class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white">
+                </span>
+              </a>
+            </li>
+            <li class="group transition duration-300">
+              <a href="about_me.html" class="font-signika text-2xl">ABOUT ME
                 <span class="hidden md:block h-0.5 bg-black dark:bg-white"></span>
               </a>
             </li>
             <li class="group transition duration-300">
-              <a href="about_me.html" class="font-signika text-2xl tap-highlight-transparent">ABOUT ME
+              <a href="contact.html" class="font-signika text-2xl">CONTACT
                 <span
-                  class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
-              </a>
-            </li>
-            <li class="group transition duration-300">
-              <a href="contact.html" class="font-signika text-2xl tap-highlight-transparent">CONTACT
-                <span
-                  class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
+                  class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white">
+                </span>
               </a>
             </li>
           </ul>
@@ -115,58 +79,35 @@
   </header>
   <!-- Content -->
   <div class="container mx-auto">
-    <h1 class="text-4xl pt-10 pb-8 font-bold">PORTFOLIO</h1>
-    <section class="text-neutral-700">
-      <div class="container w-full">
-        <div class="flex flex-wrap w-full">
-          <div class="flex w-full md:w-1/2 flex-wrap">
-            <div class="w-full md:w-1/2 p-1">
-              <div class="overflow-hidden h-full w-full">
-                <a href="https://i.imgur.com/41yxSyE.jpeg"
-                  data-fancybox="gallery">
-                  <img alt="Spettacolo Onstage"
-                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="https://i.imgur.com/41yxSyE.jpeg" />
-                </a>
-              </div>
-            </div>
-            <div class="w-full md:w-1/2 p-1">
-              <div class="overflow-hidden h-full w-full">
-                <a href="https://imgur.com/UncSTTe.jpeg"
-                  data-fancybox="gallery">
-                  <img alt="Primo piano"
-                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="https://imgur.com/UncSTTe.jpeg" />
-                </a>
-              </div>
-            </div>
-            <div class="w-full p-1">
-              <div class="overflow-hidden h-full w-full">
-                <a href="https://imgur.com/1VIkzij.jpeg"
-                  data-fancybox="gallery">
-                  <img alt="Spettcaolo Excelsior"
-                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="https://imgur.com/1VIkzij.jpeg" />
-                </a>
-              </div>
-            </div>
+    <h1 class="text-4xl pt-10 pb-8"><b>ABOUT ME</b></h1>
+    <div class="grid grid-cols-2 gap-14 md:gap-20">
+      <div class="col-span-2 md:col-span-1">
+        <div
+          class="bg-white dark:bg-neutral-900 p-5 pb-28 m-6 md:m-12 shadow-lg border border-gray-100 dark:border-neutral-800 hover:rotate-0 transition duration-500 -rotate-6 relative">
+          <img src="./assets/Avatar.png" alt=""
+            class="smooth-edges flex flex-col w-full aspect-square object-cover h-auto" />
+          <div class="absolute bottom-0 left-0 right-0 text-center">
+            <p class="text-gray-800 dark:text-slate-200 pb-7 h-full text-4xl font-nothingyoucoulddo">🌸</p>
           </div>
-          <div class="flex w-full md:w-1/2 flex-wrap">
-            <div class="w-full p-1">
-              <div class="overflow-hidden h-full w-full">
-                <a href="https://imgur.com/BSwhFST.jpeg"
-                  data-fancybox="gallery">
-                  <img alt="Primo piano Set"
-                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="https://imgur.com/BSwhFST.jpeg" />
-                </a>
-              </div>
-            </div>
+        </div>
 
-       
-            
       </div>
-    </section>
+      <section class="font-normal text-center text-base md:text-start mx-3 col-span-2 md:col-span-1 my-auto">
+        <div class="block md:hidden">
+          <p class="text-4xl font-serif font-bold mb-1">Hello there,</p>
+          <p class="text-4xl font-serif font-bold mb-6">I'm Vittoria <span class="animate-wave">📷</span></p>
+        </div>
+        <p class="text-gray-800 dark:text-slate-200 pb-7 h-full text-3xl font-nothingyoucoulddo"> <span class="animate-wave">📷</span>
+        </p>
+        <p class="text-gray-800 dark:text-slate-200 pb-7 h-full text-3xl font-nothingyoucoulddo">
+          Ogni scatto è per me un viaggio nell'espressione artistica e un'opportunità di condividere il mio sguardo unico sul mondo. La mia fotografia è intrisa di emozioni, colori e momenti autentici, riflettendo la mia dedizione a catturare la magia dell'istante.
+
+Unisciti a me in questo viaggio visivo, esplorando il mondo attraverso le mie lenti e scoprendo le storie che si nascondono dietro ogni immagine. Spero che le mie fotografie possano trasmettere la stessa passione e meraviglia che provo nel catturare il mondo che ci circonda.
+
+Grazie per essere qui e per condividere con me questa avventura fotografica. Sono entusiasta di mostrarti il mondo attraverso i miei occhi e di creare connessioni emotive attraverso le immagini che catturo.
+       
+      </section>
+    </div>
   </div>
   <!-- Footer -->
   <footer>
@@ -175,11 +116,10 @@
         <div>
           <p class="font-signika"><b> VITTORIA MAGNANI</b></p>
           <p class="mt-4 text-sm text-gray-600 dark:text-gray-300">
-             Fucecchio,Firenze 50054 <br />
-          </p>
+             Fucecchio Firenze 50054 <br />
           <div class="flex mx-auto">
             <div class="mx-auto space-x-6 flex mt-8 text-gray-600 dark:text-gray-300">
-       
+             
               <a class="transition duration-300 hover:opacity-75" href="https://instagram.com/vittoriamagnaniphotographer?igshid=NzZlODBkYWE4Ng==" target="_blank" rel="noreferrer">
                 <span class="sr-only">Instagram</span>
                 <svg fill="#000000" width="40" height="40" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -206,7 +146,40 @@
 
 
 
-
+              <head>
+                <meta charset="UTF-8">
+                <title>WHATSAPP BOTTON</title>
+                <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+                <link rel="stylesheet" href="floating-wpp.css">
+                <script type="text/javascript" src="floating-wpp.js"></script>
+                <style>
+                    body {
+                        font-family: Arial, Helvetica, sans-serif
+                        
+                    }
+                </style>
+              </head>
+              
+              <body>
+                <div id="myButton"></div>
+              </body>
+              
+              <script type="text/javascript">
+                $(function () {
+                    $('#myButton').floatingWhatsApp({
+                        phone: '393668041760',
+                        popupMessage: 'Ciao come posso aiutarti?',
+                        message: "Inserisci la tua richiesta qui",
+                        showPopup: true,
+                        showOnIE: true,
+                        headerTitle: 'Benvenuta/o,scrivimi pure qua!',
+                        headerColor: 'green',
+                        backgroundColor: 'green',
+                        buttonImage: '<img src="whatsapp.svg" />'
+                    });
+                });
+              </script>
+        
             </div>
           </div>
         </div>
@@ -217,16 +190,8 @@
       </p>
     </div>
   </footer>
-  <!-- Script for the LightBox -->
-  <script>
-    Fancybox.bind("[data-fancybox]", {});
-  </script>
   <script src="fade_in.js"></script>
   <script src="menu.js"></script>
 </body>
 
 </html>
-
-
-
-
