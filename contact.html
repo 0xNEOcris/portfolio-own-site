@@ -121,6 +121,41 @@
     </div>
   </div>
   <!-- Footer -->
+
+  <head>
+    <meta charset="UTF-8">
+    <title>WHATSAPP BOTTON</title>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="floating-wpp.css">
+    <script type="text/javascript" src="floating-wpp.js"></script>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div id="myButton"></div>
+  </body>
+  
+  <script type="text/javascript">
+    $(function () {
+      $('#myButton').floatingWhatsApp({
+        phone: '393668041760',
+        popupMessage: 'Ciao come posso aiutarti?',
+        message: "Inserisci la tua richiesta qui",
+        showPopup: true,
+        showOnIE: true,
+        headerTitle: 'Benvenuta,scrivimi pure qua!',
+        headerColor: 'green',
+        backgroundColor: 'green',
+        buttonImage: '<img src="whatsapp.svg" />'
+      });
+    });
+  </script>
+  
+  
   <footer>
     <div class="max-w-screen-xl py-16 mx-auto">
       <div class="grid grid-cols-1 gap-8 text-center mx-auto">
